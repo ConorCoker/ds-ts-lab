@@ -1,4 +1,4 @@
-import {Friend, Colleague, ColleagueHistory } from './myTypes'
+import { Friend, Colleague, ColleagueHistory } from './myTypes';
 
 const friend1: Friend = {
     name: "Paul Fleming",
@@ -11,7 +11,7 @@ const friend1: Friend = {
     phone: "086--12345",
     age: 31,
   };
-  
+
 //   console.log(friends[1]);
   
   //   -------------------
@@ -43,13 +43,12 @@ const friend1: Friend = {
     },
   };
 
-  export const colleagues = {
-    current: [colleague1, colleague2, colleague3],
-    former: [],
-  };
-  
-//   console.log(colleagues.current[0]);
+  export const colleagues: ColleagueHistory = {
+  current: [colleague1, colleague2, colleague3],
+  former: [],
+};
 
-export const friends = [friend1, friend2];
+export const friends:Friend[] = [friend1, friend2];
 
+// console.log(colleagues.current[0]);
   
