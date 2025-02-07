@@ -94,7 +94,7 @@ function addInterest(friend: Friend, interest: string):string[] {
   }
 }
 
-console.log(addInterest(friends[1], 'Politics'))
+// console.log(addInterest(friends[1], 'Politics'))
 
 
 
