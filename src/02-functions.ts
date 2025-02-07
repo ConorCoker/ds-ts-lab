@@ -74,7 +74,27 @@ function sortColleagues(
   return fullResult.slice(0,end)
 }
 // Test invocations
-console.log(sortColleagues(colleagues.current, (a, b) => (a.contact.extension - b.contact.extension),3));
-console.log(sortColleagues(colleagues.current, (a, b) => (a.name.length - b.name.length),1));
+// console.log(sortColleagues(colleagues.current, (a, b) => (a.contact.extension - b.contact.extension),3));
+// console.log(sortColleagues(colleagues.current, (a, b) => (a.name.length - b.name.length),1));
+
+// Recall we added an optional property called ‘interests’ to the Friend data type.You are required to write a function that adds an interest to a friend’s array of interests and 
+// returns the updated interests array (of strings). A typical invocation of the function might be:
+// console.log(addInterest(friends[0], 'Politics'))
+// And the response displayed by the log statement might be the following:
+// [ 'Music', 'Sport', 'Politics' ]
+
+function addInterest(friend: Friend, interest: string):string[] {
+  if (!friend.interests) {
+    const intrests: string[] = [interest]
+    friend.interests = intrests
+    return friend.interests
+  } else {
+    friend.interests.push(interest)
+    return friend.interests
+  }
+}
+
+console.log(addInterest(friends[1], 'Politics'))
+
 
 
